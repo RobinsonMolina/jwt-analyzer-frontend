@@ -49,7 +49,7 @@ frontend/
 ## Instalación
 
 ### Requisitos
-- Node.js 18+
+- Node.js 24+
 - npm o pnpm
 
 ### Configuración
