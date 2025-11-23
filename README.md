@@ -126,7 +126,7 @@ GET /api/v1/logs?limit=50
    - Configurar payload personalizado
    - Seleccionar algoritmo (HS256, HS384, HS512)
    - Establecer tiempo de expiración
-   - Copiar el token generado
+   - Copiar el token generado.
 
 ## Tecnologías
 
