@@ -2,8 +2,8 @@ import { useState } from 'react'
 import { jwtAPI } from '../services/api'
 
 function JWTEncoder() {
-  const [payload, setPayload] = useState('{\n  "sub": "1234567890",\n  "name": "John Doe",\n  "iat": 1516239022\n}')
-  const [secret, setSecret] = useState('my-secret-key')
+  const [payload, setPayload] = useState('{\n  "sub": "1234567890",\n  "name": "Robinson Molina",\n  "iat": 1516239022\n}')
+  const [secret, setSecret] = useState('robin1234')
   const [algorithm, setAlgorithm] = useState('HS256')
   const [expiresIn, setExpiresIn] = useState('3600')
   const [result, setResult] = useState(null)
@@ -47,8 +47,8 @@ function JWTEncoder() {
   const loadTemplate = (template) => {
     const templates = {
       basic: '{\n  "sub": "user123",\n  "name": "Test User"\n}',
-      withClaims: '{\n  "sub": "user123",\n  "name": "John Doe",\n  "email": "john@example.com",\n  "role": "admin"\n}',
-      withTime: `{\n  "sub": "user123",\n  "name": "John Doe",\n  "iat": ${Math.floor(Date.now() / 1000)}\n}`
+      withClaims: '{\n  "sub": "user123",\n  "name": "Robinson Molina",\n  "email": "robin@example.com",\n  "role": "admin"\n}',
+      withTime: `{\n  "sub": "user123",\n  "name": "Felipe Granados",\n  "iat": ${Math.floor(Date.now() / 1000)}\n}`
     }
     setPayload(templates[template])
   }
@@ -128,7 +128,6 @@ function JWTEncoder() {
               >
                 <option value="HS256">HS256</option>
                 <option value="HS384">HS384</option>
-                <option value="HS512">HS512</option>
               </select>
             </div>
 
