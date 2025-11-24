@@ -77,7 +77,7 @@ function JWTEncoder() {
             <textarea
               value={payload}
               onChange={(e) => setPayload(e.target.value)}
-              placeholder='{"sub": "1234567890", "name": "John Doe"}'
+              placeholder='{"sub": "1234567890", "name": "Robinson Molina"}'
               rows="8"
               className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 font-mono text-sm"
             />
@@ -112,7 +112,7 @@ function JWTEncoder() {
                 type="text"
                 value={secret}
                 onChange={(e) => setSecret(e.target.value)}
-                placeholder="my-secret-key"
+                placeholder="Robin1234"
                 className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
